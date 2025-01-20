@@ -16,13 +16,14 @@ $false_bool = false;
 
 $fruit_list
     = [
-        'Banana', // index: 0
-        'Apple',  // index: 1
-        'Orange', // index: 2
-        'Mango', // index: 3
-        'Grapes', // index: 4
-        'Pineapple' // index: 5
+        ['name' => 'Banana', 'color' => 'yellow'],
+        ['name' => 'Apple', 'color' => 'Green'],
+        ['name' => 'Orange', 'color' => 'orange'],
+        ['name' => 'Mango', 'color' => 'yellowish-orange'],
+        ['name' => 'Grapes', 'color' => 'purple'],
+        ['name' => 'Pineapple', 'color' => 'brown-green']
     ];
+
 
 $student = [
     "name" => "John Smith",
@@ -31,24 +32,24 @@ $student = [
 ];
 
 
+$a
+    = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+    ];
+
 // UPDATE THE FOURTH ELEMENT IN $fruit_list
 $fruit_list[3] = "Watermelon";
 
 
 // UPDATE THE VALUE IN THE "NAME" ELEMENT IN $student
 $student['name'] = "Tony Stark";
-
-
 ?>
 
 <body>
-    <H1>Hello World</H1>
-    <p><?= $welcome_message ?></p>
-    <p><?= $int_message ?></p>
-    <p>Boolean true: <?= $true_bool ?></p>
-    <p>Boolean false: <?= $false_bool ?></p>
-    <p>Mon favori fruit est: <?= $fruit_list[3] ?></p>
-    <p>Étudiant nom: <?= $student['name'] ?></p>
+    <p><?= $fruit_list[0]['name'] ?> is <?= $fruit_list[0]['color'] ?> </p>
+    <p><?= $fruit_list[4]['name'] . " are " . $fruit_list[4]['color'] ?> </p>
 </body>
 
 </html>
