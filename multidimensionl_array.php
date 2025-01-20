@@ -24,13 +24,11 @@ $fruit_list
         ['name' => 'Pineapple', 'color' => 'brown-green']
     ];
 
-
 $student = [
     "name" => "John Smith",
     "age" => 21,
     "Program" => "Computer Science",
 ];
-
 
 $a
     = [
