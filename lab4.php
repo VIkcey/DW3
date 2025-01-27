@@ -50,21 +50,17 @@
     // Output the offer for today
     echo ($offer > 0) ? "Today's Offer: " . $offer : "No offers for today";
 
+
+    $stock_var = ($stock > 0) ? $stock . " " . "left in stock" : "Out of stock!";
+
+    $offer_message = "<h1>The Bakery</h1>" .
+        "<h2>Today is $today </h2>" .
+        "<h2> Our special offer for $product</h2>" .
+        "<p>Available offers  $offer</p>" .
+        "<p>$stock_var</p>";
+
+    echo $offer_message;
     ?>
-
-    <h1>The Bakery</h1>
-    <h2>Today is <?= $today ?></h2>
-
-    <h2>
-        Our special offer for <?= $product ?>
-    </h2>
-    <p>Available offers <?= $offer ?></p>
-
-    <p>
-        <?php
-        echo ($stock > 0) ? $stock . " " . "left in stock" : "Out of stock!";
-        ?>
-    </p>
 
 </body>
 
