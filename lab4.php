@@ -48,12 +48,7 @@
     }
 
     // Output the offer for today
-    if ($offer > 0) {
-        echo "Today's Offer: " . $offer;
-    } else {
-        echo "No offers for today";
-    }
-
+    echo ($offer > 0) ? "Today's Offer: " . $offer : "No offers for today";
 
     ?>
 
@@ -67,11 +62,7 @@
 
     <p>
         <?php
-        if ($stock > 0) {
-            echo $stock . " " . "left in stock";
-        } else {
-            echo "Out of stock!";
-        }
+        echo ($stock > 0) ? $stock . " " . "left in stock" : "Out of stock!";
         ?>
     </p>
 
